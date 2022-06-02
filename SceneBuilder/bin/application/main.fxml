@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller">
+   <children>
+      <Button fx:id="button1" layoutX="60.0" layoutY="75.0" mnemonicParsing="false" onAction="#button1Action" text="X-AXIS" />
+      <Button fx:id="button2" layoutX="60.0" layoutY="142.0" mnemonicParsing="false" onAction="#button2Action" text="Y-AXIS">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Button>
+      <Circle fx:id="c" fill="DODGERBLUE" layoutX="396.0" layoutY="273.0" radius="61.0" stroke="BLACK" strokeType="INSIDE" />
+   </children>
+</AnchorPane>

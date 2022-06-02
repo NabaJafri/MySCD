@@ -1,0 +1,34 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.Scanner;
+
+public class ManipulateData {
+
+	public static final String URL = "jdbc:mysql://127.0.0.1:3306/test";
+	public static final String USERNAME = "root";
+	public static final String PASSWORD = "fast123";
+
+	public static void main(String[] args) {
+		int choice=0;
+		System.out.println("1.Insert \n 2.Display \n3.Order By Location");
+		Scanner scan1 = new Scanner(System.in);
+		choice = scan1.nextInt();
+		switch(choice)
+		{
+		case 1:
+			Scanner scan2 = null;
+			int sno = 0;
+			String sname = null, sadd = null;
+			float avg = 0.0f;
+			String query = null;
+			Connection con = null;
+			Statement st = null;
+			int count = 0;
+
+		
+		}
+	}
+
+}

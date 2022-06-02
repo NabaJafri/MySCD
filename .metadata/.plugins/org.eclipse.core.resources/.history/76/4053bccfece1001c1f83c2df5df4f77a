@@ -1,0 +1,41 @@
+interface RightHand{
+	void gun();
+}
+interface LeftHand{
+	void shield();
+}
+class Rifle implements RightHand{
+
+	@Override
+	public void gun() {
+		System.out.println("This is a rifle");
+		
+	}
+	
+}
+class Shotgun implements RightHand{
+	public void gun()
+	{
+		System.out.println("This is a shotgun");
+	}
+}
+class WoodenShield implements LeftHand{
+	public void shield()
+	{
+		 System.out.println("This is a wooden shield");
+	}
+}
+class MetalShield implements LeftHand{
+	public void shield()
+	{
+		System.out.println("This is a metal shield");
+	}
+}
+public class program {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

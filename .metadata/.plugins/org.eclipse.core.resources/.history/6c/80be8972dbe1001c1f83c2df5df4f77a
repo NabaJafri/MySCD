@@ -1,0 +1,14 @@
+package application;
+
+import javafx.scene.control.Button;
+
+public class controller {
+
+	public Button button;
+	int count =0;
+	public void buttonAction()
+	{
+		System.out.println(count++);
+	}
+
+}

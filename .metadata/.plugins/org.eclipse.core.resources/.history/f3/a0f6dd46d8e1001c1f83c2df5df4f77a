@@ -1,0 +1,13 @@
+package application;
+
+import javafx.scene.control.Button;
+
+public class controller {
+
+	public Button button;
+	public void buttonAction()
+	{
+		
+	}
+
+}

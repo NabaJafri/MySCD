@@ -1,0 +1,76 @@
+package application;
+	
+import javafx.application.Application;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
+import javafx.scene.Scene;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.StackPane;
+import javafx.scene.layout.VBox;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+
+
+//Switch winndows
+public class Main {
+	
+	static public void display(String title) {
+		Stage window = new Stage();
+		window.initModality(Modality.APPLICATION_MODAL);
+		window.setMinWidth(250);
+		
+		Button b1 = new Button("Click me to close window!");
+		b1.setOnAction(e->{window.close();});
+		StackPane root=new StackPane();
+		root.getChildren().add(b1);
+		Scene s1= new Scene(root,500,500);
+		
+		window.setScene(s1);
+		window.setTitle(title);
+		window.showAndWait();
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}
+
+
+//		Switch Scenes :
+//public class Main extends Application {
+//	Stage window;
+//	Scene scene1,scene2;
+//	@Override
+//	public void start(Stage primaryStage) {
+//		
+//		window = primaryStage;
+//		
+//		Label l1 = new Label("This is scene 1");
+//		Button b1 = new Button("This is scene 1 button");
+//		VBox root1 = new VBox();
+//		root1.getChildren().addAll(l1,b1);
+//		scene1=new Scene(root1,500,500);
+//		b1.setOnAction(e->{
+//			window.setScene(scene2);
+//		});
+//		
+//		Label l2 = new Label("This is scene 2");
+//		Button b2 = new Button("This is scene 2 button");
+//		HBox root2 = new HBox();
+//		root2.getChildren().addAll(l2,b2);
+//		scene2=new Scene(root2,500,500);
+//		b2.setOnAction(e->{
+//			window.setScene(scene2);
+//		});
+//		
+//		window.setScene(scene1);
+//		window.setTitle("switch scenes");
+//		window.show();
+//
+//	}
+//	
+//	public static void main(String[] args) {
+//		launch(args);
+//	}
+//}
